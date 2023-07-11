@@ -84,6 +84,7 @@ class SpringBootStarterDataJpaApplicationTests {
 
     @Order(3) 
     void createPerson() throws Exception {
+
         mvc.perform(post("/persons")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{ \"firstName\": \"Someone\", \"lastName\": \"Else\" }") 
@@ -104,6 +105,7 @@ class SpringBootStarterDataJpaApplicationTests {
     @Test
     @Order(5) 
     void updatePerson() throws Exception {
+
         mvc.perform(put("/persons/1").contentType(MediaType.APPLICATION_JSON)
                 .content("{ \"firstName\": \"Someone\", \"lastName\": \"Else\" }").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk()).andExpect(jsonPath("$.firstName").value("Someone"));
