@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sample Application</string>
+    <string name="hello_world">Hello World</string>
+    <string name="Do_Something">Do something</string>
+    <string name="toast">This is a Toast</string>
+    <string name="Sign_Up">Sign up</string>
+    <string name="Sign_Up_Form">Sign Up Form</string>
+    <string name="Name">Name</string>
+    <string name="Submit">Submit</string>
+    <string name="EmailAddress">Email_address</string>
+    <string name="isdebugged">This app is currently being debugged</string>
+    <string name="notdebugged">This app is not currently being debugged</string>
+    <string name="isemulator">This app is running on an emulator</string>
+    <string name="notemulator">This app is not running on an emulator</string>
+    <string name="ishooked">This app is being hooked</string>
+    <string name="nothooked">This app is not hooked</string>
+    <string name="isrooted">This device is rooted</string>
+    <string name="notrooted">This device is not rooted</string>
+    <string name="istampered">This device is hacked</string>
+    <string name="nottampered">This is not tampered</string>
+</resources>

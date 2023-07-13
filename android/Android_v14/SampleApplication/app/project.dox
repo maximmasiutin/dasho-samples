@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dasho mode="android" version="11.3.0">
+    <controlflow option="on"/>
+    <stringencrypt option="on"/>
+    <injection>
+        <checks>
+            <debuggingCheck action="DebugcheckAction()" response="exception" where="BeginningAndEnd">
+                <locations>
+                    <classes name="com.example.sampleapplication.MainActivity">
+                        <method name="DebugCheck" signature=""/>
+                    </classes>
+                </locations>
+            </debuggingCheck>
+            <emulatorCheck action="EmulatorcheckAction()" response="hang" where="BeginningAndEnd">
+                <locations>
+                    <classes name="com.example.sampleapplication.MainActivity">
+                        <method name="EmulatorCheck" signature=""/>
+                    </classes>
+                </locations>
+            </emulatorCheck>
+            <hookCheck action="HookcheckAction()" response="exception" where="BeginningAndEnd">
+                <locations>
+                    <classes name="com.example.sampleapplication.MainActivity">
+                        <method name="HookCheck" signature=""/>
+                    </classes>
+                </locations>
+            </hookCheck>
+            <rootCheck action="RootcheckAction()" response="hang">
+                <locations>
+                    <classes name="com.example.sampleapplication.MainActivity">
+                        <method name="RootCheck" signature=""/>
+                    </classes>
+                </locations>
+            </rootCheck>
+            <tamperCheck action="TampercheckAction()" response="exit" where="BeginningAndEnd">
+                <locations>
+                    <classes name="com.example.sampleapplication.MainActivity">
+                        <method name="TemperCheck" signature=""/>
+                    </classes>
+                </locations>
+                <signerInfo alias="key0" keystore="..\key.jks" storepass="[ZMMNcCt5pb0=]" storetype="JKS"/>
+            </tamperCheck>
+        </checks>
+    </injection>
+</dasho>
